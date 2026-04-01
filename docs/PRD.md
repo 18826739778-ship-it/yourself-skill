@@ -75,7 +75,7 @@ Part A（Self Memory）补充：结合你的价值观、经历、习惯，让回
   - 用户可直接确认或修改
   ↓
 [Step 5] 写入文件，立即可用
-  - 生成 selves/{slug}/ 目录
+  - 生成 .claude/skills/{slug}/ 目录
   - 包含 SKILL.md（完整组合版）
   - 包含 self.md 和 persona.md（独立部分）
   ↓
@@ -272,8 +272,7 @@ create-yourself/                    # meta-skill
 │   ├── skill_writer.py              # 文件管理
 │   └── version_manager.py           # 版本管理
 │
-├── selves/                          # 生成的自我 Skills
-│   └── {slug}/
+.claude/skills/{slug}/              # 生成的自我 Skill（可直接运行）
 │       ├── SKILL.md                 # 完整组合版
 │       ├── self.md                  # Part A：自我记忆
 │       ├── persona.md               # Part B：人格
@@ -293,7 +292,7 @@ create-yourself/                    # meta-skill
 
 ## 关键文件格式
 
-### `selves/{slug}/meta.json`
+### `.claude/skills/{slug}/meta.json`
 
 ```json
 {
@@ -324,7 +323,7 @@ create-yourself/                    # meta-skill
 }
 ```
 
-### `selves/{slug}/SKILL.md` 结构
+### `.claude/skills/{slug}/SKILL.md` 结构
 
 ```markdown
 ---

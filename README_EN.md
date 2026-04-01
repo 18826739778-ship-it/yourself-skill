@@ -176,7 +176,7 @@ create-yourself/
 │   ├── photo_analyzer.py       # Photo EXIF analyzer
 │   ├── skill_writer.py         # Skill file manager
 │   └── version_manager.py      # Version archive & rollback
-├── selves/                     # Generated self Skills (gitignored)
+├── .claude/skills/{slug}/      # Generated self Skills (invocable)
 ├── docs/PRD.md
 ├── requirements.txt
 └── LICENSE
